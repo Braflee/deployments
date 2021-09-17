@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+
+body{
+    background-image: url('https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.input{
+    font-family: 'Roboto Mono', monospace;
+    height: 50px;
+    width: 25%;
+    margin: 2px;
+    border: none;
+    border-radius: 10px;
+    transition: width 1s;
+    outline: none;
+}
+
+.input:focus {
+    width: 50%;
+    outline: none;
+}
+
+#submitBtn{
+    margin: 2px;
+    font-family: 'Roboto Mono', monospace;
+    height: 30px;
+    width: 25%;
+    border: none;
+    background-color: cadetblue;
+    border-radius: 10px;
+    transition: opacity 1s;
+}
+
+#submitBtn:hover {
+    opacity: 75%;
+}
+
+#todoList{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.listItem{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+button {
+    margin: 2px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+

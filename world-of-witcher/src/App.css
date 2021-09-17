@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body {
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/37f7f742-dca4-4601-8f2b-536f03b1f839/dd0l4pm-cd0f03db-d350-4e5a-9c95-7004bd918882.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM3ZjdmNzQyLWRjYTQtNDYwMS04ZjJiLTUzNmYwM2IxZjgzOVwvZGQwbDRwbS1jZDBmMDNkYi1kMzUwLTRlNWEtOWM5NS03MDA0YmQ5MTg4ODIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ti9ClDC_hJ_PH9sVe8aeBkGnykYWeJHl6CzgESqajZY');
+  background-attachment: fixed;
+  background-position: top 25% center;
+  font-family: 'Cinzel', sans-serif;
+  color: lightgray;
+}
+
+.btn-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  height: 350px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  color: grey;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  box-shadow: 5px 5px 10px black;
+  outline: none;
+}
+
+.home-btn {
+  background: none;
+  color: white;
+  transition: backdrop-filter 1s, font-size 1s;
+}
+
+.home-btn:hover {
+  backdrop-filter: blur(10px);
+  font-size: 24px;
+}
+
+.home-back {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmMUSZ1tNtQB_Ng7mEv0PEdQlUk4ZqW9u-SA&usqp=CAU');
+  background-position: center;
+  background-size: 100%;
+  border-radius: 10px;
+}
+
+.char-btn {
+  background: none;
+  color: white;
+  transition: backdrop-filter 1s, font-size 1s;
+}
+
+.char-btn:hover{
+  backdrop-filter: blur(10px);
+  font-size: 24px;
+}
+
+.char-back {
+  background-image: url('https://www.gamespew.com/wp-content/uploads/2019/09/Witcher-3-header-.jpg');
+  background-position: center;
+  border-radius: 10px;
+}
+
+.monst-btn {
+  background: none;
+  color: white;
+  transition: backdrop-filter 1s, font-size 1s;
+}
+
+.monst-btn:hover {
+  backdrop-filter: blur(10px);
+  font-size: 24px;
+}
+
+.monst-back {
+  background-image: url('https://www.pngkey.com/png/full/340-3402885_witcher-png-picture-witcher-3-monster-concept-art.png');
+  background-position: center;
+  border-radius: 10px;
+}
+
+.quest-btn {
+  background: none;
+  color: white;
+  transition: backdrop-filter 1s, font-size 1s;
+}
+
+.quest-btn:hover {
+  backdrop-filter: blur(10px);
+  font-size: 24px;
+}
+
+.quest-back {
+  background-image: url('https://res.cloudinary.com/cook-becker/image/fetch/q_auto:best,f_auto,w_1920,e_sharpen/https://candb.com/site/candb/images/artwork/world-map_witcher-3_cd-projekt-red.jpg');
+  background-position: right;
+  border-radius: 10px;
+}
+
+.char-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.monst-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.quest-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.card-cont {
+    margin: 50px;
+}
+
+img {
+    height: 350px;
+    width: 200px;
+    border: 50px;
+    border-radius: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 350px;
+  perspective: 1000px;
+  border-radius: 10px;
+  border: 50px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 50px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+    background-position: center;
+    background: no-repeat center center;
+    background-size: 200px 350px;
+    height: 350px;
+    width: 200px;
+    color: black;
+    border: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  border: 50px;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  box-shadow: 5px 5px 10px black;
+}
+
+.home-cont {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.intro-cont {
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
